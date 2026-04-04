@@ -19,6 +19,7 @@ export class ReadFileTool implements Tool {
     "Reads a local text file. Returns numbered lines. Use this before summarizing or editing repository files.";
   public readonly inputFormat =
     '{"file_path":"README.md","offset":1,"limit":200}';
+  public readonly permission = "read" as const;
 
   public async run(input: unknown, context: ToolContext): Promise<ToolResult> {
     const parsed = readFileInputSchema.safeParse(input);

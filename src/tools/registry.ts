@@ -1,4 +1,8 @@
+import { BashTool } from "./bash.js";
+import { EditFileTool } from "./edit-file.js";
+import { GlobTool } from "./glob.js";
 import { ReadFileTool } from "./read-file.js";
+import { WriteFileTool } from "./write-file.js";
 
 import type { Tool, ToolDefinition } from "./tool.js";
 
@@ -23,5 +27,11 @@ export class ToolRegistry {
 }
 
 export function createDefaultToolRegistry(): ToolRegistry {
-  return new ToolRegistry([new ReadFileTool()]);
+  return new ToolRegistry([
+    new BashTool(),
+    new ReadFileTool(),
+    new GlobTool(),
+    new WriteFileTool(),
+    new EditFileTool(),
+  ]);
 }
