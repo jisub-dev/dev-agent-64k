@@ -6,6 +6,9 @@ It runs in the terminal, connects to an OpenAI-compatible model endpoint such as
 
 This repository is the current higher-context baseline that was built while exploring a Claude Code style workflow. It works today, but the long-term direction is shifting toward a lighter, more deterministic CLI agent for smaller local models.
 
+## Demo
+![나의 동영상 (1)](https://github.com/user-attachments/assets/1ec5c3de-5a73-48b5-ba0f-69305e336110)
+
 ## Related Article
 
 - Project write-up: [폐쇄망 환경에서 로컬 LLM 코딩 에이전트 파일럿 구축기](https://memorysaver.tistory.com/31)
